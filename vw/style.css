@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'sm';
+  src: url('fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sm';
+  src: url('fonts/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: 'sm';
+  background-color: #1c1c1c;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  position: relative;
+}
+
+.parent {
+  position: static;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid red;
+} */
