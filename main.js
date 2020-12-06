@@ -5,14 +5,18 @@ let win;
 function xmw() {
   win = new BrowserWindow({
     width: 500,
-    height: 300,
-    resizable: false,
+    height: 200,
     frame: false,
+    resizable: true,
+    y: 0,
+    x: 0,
+    alwaysOnTop: true,
     webPreferences: {
       nodeIntegration: true,
     },
   });
 
+  // win.setIgnoreMouseEvents(true);
   win.loadFile('vw/index.html');
 }
 
